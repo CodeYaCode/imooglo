@@ -8,7 +8,7 @@
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
  * All Right Reserved.
  */
-package imooglo.controller.account;
+package com.imooglo.controller.account;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import imooglo.controller.BaseController;
+import com.imooglo.controller.BaseController;
 
 /**
  * AccountController.java

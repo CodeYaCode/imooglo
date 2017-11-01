@@ -8,7 +8,7 @@
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
  * All Right Reserved.
  */
-package imooglo.controller.index;
+package com.imooglo.controller.index;
 
 import java.util.List;
 
@@ -16,9 +16,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import imooglo.controller.BaseController;
-import imooglo.domain.User;
-import imooglo.service.IDataGetterService;
+import com.imooglo.controller.BaseController;
+import com.imooglo.domain.User;
+import com.imooglo.service.IDataGetterService;
 
 /**
  * IndexController.java

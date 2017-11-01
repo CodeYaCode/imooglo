@@ -8,7 +8,7 @@
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
  * All Right Reserved.
  */
-package imooglo.monitor;
+package com.imooglo.monitor;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 

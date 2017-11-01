@@ -8,7 +8,7 @@
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
  * All Right Reserved.
  */
-package imooglo.controller;
+package com.imooglo.controller;
 
 /**
  * BaseController.java

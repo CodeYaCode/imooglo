@@ -8,14 +8,14 @@
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
  * All Right Reserved.
  */
-package imooglo.dao;
+package com.imooglo.dao;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Component;
 
-import imooglo.domain.User;
+import com.imooglo.domain.User;
 
 /**
  * IUserDao.java

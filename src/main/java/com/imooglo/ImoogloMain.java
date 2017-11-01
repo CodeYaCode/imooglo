@@ -8,10 +8,11 @@
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
  * All Right Reserved.
  */
-package imooglo;
+package com.imooglo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 
 /**
  * ImoogloMain.java
@@ -19,7 +20,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author LiuChen
  * @version 1.0.0.0 2017年10月30日
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.imooglo.*")
+@ServletComponentScan
 public class ImoogloMain {
 
     public static void main(String[] args) {

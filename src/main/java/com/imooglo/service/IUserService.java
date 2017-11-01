@@ -1,5 +1,5 @@
 /*
- * $Header: User.java
+ * $Header: IUserService.java
  * $Revision: 1.0.0.0
  * $CreateDate: 2017年10月31日
  * $ModifyDate: 2017年10月31日
@@ -8,23 +8,21 @@
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
  * All Right Reserved.
  */
-package imooglo.domain;
+package com.imooglo.service;
+
+import java.util.List;
+
+import com.imooglo.domain.User;
 
 /**
- * User.java
+ * IUserService.java
  * 
  * @author LiuChen
  * @version 1.0.0.0 2017年10月31日
  */
-public class User {
-    /** 自增主键 */
-    private int id;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+public interface IUserService {
+    /**
+     * 查询所有的用户
+     */
+    public List<User> queryAllUsers();
 }

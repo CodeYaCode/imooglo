@@ -8,9 +8,9 @@
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
  * All Right Reserved.
  */
-package imooglo.service;
+package com.imooglo.service;
 
-import imooglo.dao.IUserDao;
+import com.imooglo.dao.IUserDao;
 
 /**
  * IDataService.java
