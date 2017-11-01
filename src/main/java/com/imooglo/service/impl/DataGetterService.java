@@ -8,14 +8,14 @@
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
  * All Right Reserved.
  */
-package imooglo.service.impl;
+package com.imooglo.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import imooglo.dao.IUserDao;
-import imooglo.service.IDataGetterService;
-import imooglo.service.IUserService;
+import com.imooglo.dao.IUserDao;
+import com.imooglo.service.IDataGetterService;
+import com.imooglo.service.IUserService;
 
 /**
  * DataService.java
