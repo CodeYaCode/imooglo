@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.imooglo.controller.BaseController;
 import com.imooglo.domain.User;
 import com.imooglo.service.IDataGetterService;
+import com.imooglo.util.JsonUtils;
 
 /**
  * IndexController.java
@@ -35,6 +36,6 @@ public class IndexController extends BaseController {
     public String index() {
         List<User> users = dataGetterService.getUserService().queryAllUsers();
         System.out.println(users.get(0).getId());
-        return "Hello World!";
+        return JsonUtils.toJson(users);
     }
 }
