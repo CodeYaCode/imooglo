@@ -1,8 +1,8 @@
 /*
  * $Header: Hospital.java
  * $Revision: 1.0.0.0
- * $CreateDate: 2017-11-02 17:22:03
- * $ModifyDate: 2017-11-02 17:22:03
+ * $CreateDate: 2017-11-02 17:21:07
+ * $ModifyDate: 2017-11-02 17:21:07
  * $Owner: LiuChen
  * 
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
@@ -15,7 +15,7 @@ package com.imooglo.domain;
  * Auto Generate By Chen
  *
  * @author LiuChen
- * @version 1.0.0.0 2017-11-02 17:22:03
+ * @version 1.0.0.0 2017-11-02 17:21:07
  */
 public class Hospital {
     /** 医院ID */
@@ -140,6 +140,15 @@ public class Hospital {
     }
 
 // -*- SELF CODE START -*-
+    public void test() {
+        system.out.println("abc");
+    }
+
+    public void test() {
+        system.out.println("abc");
+    }
+
+
 
 
 // -*- SELF CODE END -*-
