@@ -19,12 +19,23 @@ package com.imooglo.domain;
 public class User {
     /** 自增主键 */
     private int id;
-
+    
+    /** 昵称 */
+    private String nickname;
+    
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 }
