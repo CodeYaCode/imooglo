@@ -7,28 +7,6 @@
 
 import time
 
-DB = {
-	'HOST' 	  : '127.0.0.1',
-	'PORT' 	  : '3306',
-	'USER' : 'root',
-	'PWD' : '123456',
-	'NAME' 	  : 'imooglo',
-	'CHARSET'  : 'utf8',
-}
-
-DOMAIN = {
-	# edit, upper
-	'NAME' : 'MEDICAL_RECORD',
-}
-
-DATA_TYPE = {
-	'int' 		: 'int',
-	'varchar'   : 'String',
-	'timestamp' : 'long',
-	'double'    : 'double',
-	'text'      : 'String',
-}
-
 # get class name
 # eg: ABC   => Abc
 #	  A_B_C => ABC

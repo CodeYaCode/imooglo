@@ -1,8 +1,8 @@
 /*
  * $Header: Hospital.java
  * $Revision: 1.0.0.0
- * $CreateDate: 2017-11-02 17:22:03
- * $ModifyDate: 2017-11-02 17:22:03
+ * $CreateDate: 2017-11-02 18:13:18
+ * $ModifyDate: 2017-11-02 18:13:18
  * $Owner: LiuChen
  * 
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
@@ -15,17 +15,19 @@ package com.imooglo.domain;
  * Auto Generate By Chen
  *
  * @author LiuChen
- * @version 1.0.0.0 2017-11-02 17:22:03
+ * @version 1.0.0.0 2017-11-02 18:13:18
  */
 public class Hospital {
     /** 医院ID */
     public int id;
     /** 医院名称 */
     public String name;
-    /** 所在国家ID */
-    public int country;
-    /** 所在区ID */
-    public int district;
+    /** 所在国家 */
+    public String country;
+    /** 城市 */
+    public String city;
+    /** 所在区域 */
+    public String district;
     /** 具体地址 */
     public String address;
     /** 上岗兽医（多名用；隔开） */
@@ -59,19 +61,27 @@ public class Hospital {
         this.name = name;
     }
 
-    public int getCountry() {
+    public String getCountry() {
         return this.country;
     }
 
-    public void setCountry(int country) {
+    public void setCountry(String country) {
         this.country = country;
     }
 
-    public int getDistrict() {
+    public String getCity() {
+        return this.city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getDistrict() {
         return this.district;
     }
 
-    public void setDistrict(int district) {
+    public void setDistrict(String district) {
         this.district = district;
     }
 
@@ -140,6 +150,8 @@ public class Hospital {
     }
 
 // -*- SELF CODE START -*-
+
+
 
 
 // -*- SELF CODE END -*-
