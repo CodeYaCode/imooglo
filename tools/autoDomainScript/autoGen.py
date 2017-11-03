@@ -57,7 +57,7 @@ def getSelfCode(filePath) :
 		if line == SELF_CODE_END :
 			flag = False
 		if flag :
-			selfCode = selfCode + line
+			selfCode = selfCode + line.strip('\n')
 		if line == SELF_CODE_START :
 			flag = True
 	rFile.close()
@@ -65,10 +65,10 @@ def getSelfCode(filePath) :
 
 # gen objects and methods
 objs, methods = genObjsAndMethods()
-filePath = conf.FILE['PATH'] + conf.DOMAIN['NAME'][0] + conf.DOMAIN['NAME'][1:].lower() + '.java'
+filePath = conf.FILE['PATH'] + conf.FILE['NAME'] + '.java'
 # test path
 # filePath = conf.DOMAIN['NAME'][1:].lower() + '.java'
-selfCode = '// ' + str(time.time())
+selfCode = ''
 if os.path.exists(filePath):
 	# handle self code
 	selfCode = getSelfCode(filePath)
