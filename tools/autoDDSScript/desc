@@ -1,1 +1,4 @@
 为所有domain自动生成Dao，Service，dataGetter中的代码
+
+1、扫描domian路径下所有的文件，生成相应的Dao，Service，Datagetter代码，
+   如果已经有了相应的文件则不重复生成。

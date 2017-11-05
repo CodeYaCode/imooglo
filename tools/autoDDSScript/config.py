@@ -11,16 +11,15 @@ import time
 # eg: ABC   => Abc
 #	  A_B_C => ABC
 #	  A_BC  => ABc
-def getClassName(str) :
-	ss = str.split('_')
+def getClassName(s) :
+	ss = s.split('_')
 	if len(ss) > 1 :
 		return ss[0][0] + ss[0][1:].lower() + ss[1][0] + ss[1][1:].lower()
 	else :
-		return str(ss)
-
+		return str(ss[0])
 FILE = {
 	# Your local project path
-	'PATH' : 'D:/liuchen/imooglo/backend/imooglo/src/main/java/com/imooglo/domain/',
+	'PATH' : 'E:/liuchen/imooglo/tools/test/',
 	'TITLE' : 
 '''/*
  * $Header: %s.java
@@ -32,24 +31,15 @@ FILE = {
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
  * All Right Reserved.
  */
-package com.%s.domain;
-
+package com.imooglo.%s;
+%s
 /**
  * %s.java
  * Auto Generate By Chen
  *
  * @author LiuChen
  * @version 1.0.0.0 %s
- */
-''' % (
-		getClassName(DOMAIN['NAME']), 
-		time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
-		time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
-		DB['NAME'],
-		getClassName(DOMAIN['NAME']),
-		time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
-	),
-	'CLASS' : 
-'''public class %s {\n''' % (getClassName(DOMAIN['NAME'])),
-	'NAME' : getClassName(DOMAIN['NAME']),
+ */%s
+public %s %s {
+''',
 }
