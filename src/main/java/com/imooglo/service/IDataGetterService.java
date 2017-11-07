@@ -1,8 +1,8 @@
 /*
- * $Header: IDataService.java
+ * $Header: IDataGetterService.java
  * $Revision: 1.0.0.0
- * $CreateDate: 2017年10月31日
- * $ModifyDate: 2017年10月31日
+ * $CreateDate: 2017-11-07 14:08:52
+ * $ModifyDate: 2017-11-07 14:08:52
  * $Owner: LiuChen
  * 
  * Copyright (c) 2017-2027 ShangHai ChenJxx Co. Ltd.
@@ -10,24 +10,70 @@
  */
 package com.imooglo.service;
 
+import com.imooglo.dao.IHospitalDao;
+import com.imooglo.dao.IMedicalRecordDao;
+import com.imooglo.dao.IPetDao;
 import com.imooglo.dao.IUserDao;
+import com.imooglo.service.IHospitalService;
+import com.imooglo.service.IMedicalRecordService;
+import com.imooglo.service.IPetService;
+import com.imooglo.service.IUserService;
 
 /**
- * IDataService.java
- * 
+ * IDataGetterService.java
+ * Auto Generate By Chen
+ *
  * @author LiuChen
- * @version 1.0.0.0 2017年10月31日
+ * @version 1.0.0.0 2017-11-07 14:08:52
  */
 public interface IDataGetterService {
-    /**
-     * Get user dao
-     * @return
-     */
-    public IUserDao getUserDao();
     
     /**
-     * Get user service
+     * IHospitalDao
      * @return
      */
-    public IUserService getUserService();
+    IHospitalDao getHospitalDao();
+
+    /**
+     * IMedicalRecordDao
+     * @return
+     */
+    IMedicalRecordDao getMedicalRecordDao();
+
+    /**
+     * IPetDao
+     * @return
+     */
+    IPetDao getPetDao();
+
+    /**
+     * IUserDao
+     * @return
+     */
+    IUserDao getUserDao();
+
+    /**
+     * IHospitalService
+     * @return
+     */
+    IHospitalService getHospitalService();
+
+    /**
+     * IMedicalRecordService
+     * @return
+     */
+    IMedicalRecordService getMedicalRecordService();
+
+    /**
+     * IPetService
+     * @return
+     */
+    IPetService getPetService();
+
+    /**
+     * IUserService
+     * @return
+     */
+    IUserService getUserService();
+
 }

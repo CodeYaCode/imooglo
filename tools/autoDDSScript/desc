@@ -1,4 +1,6 @@
 为所有domain自动生成Dao，Service，dataGetter中的代码
 
 1、扫描domian路径下所有的文件，生成相应的Dao，Service，Datagetter代码，
-   如果已经有了相应的文件则不重复生成。
+   特别注意，如果dao，service文件已经存在则不会生成新的文件。
+   但是，IDataGetter文件每次执行脚本都会重新执行。
+   而且，目前脚本没有对自定义代码进行保存。
