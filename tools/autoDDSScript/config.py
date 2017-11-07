@@ -7,19 +7,10 @@
 
 import time
 
-# get class name
-# eg: ABC   => Abc
-#	  A_B_C => ABC
-#	  A_BC  => ABc
-def getClassName(s) :
-	ss = s.split('_')
-	if len(ss) > 1 :
-		return ss[0][0] + ss[0][1:].lower() + ss[1][0] + ss[1][1:].lower()
-	else :
-		return str(ss[0])
 FILE = {
 	# Your local project path
-	'PATH' : 'E:/liuchen/imooglo/tools/test/',
+	# 'PATH' : 'D:/liuchen/imooglo/backend/imooglo/tools/test/',
+	'PATH' : 'D:/liuchen/imooglo/backend/imooglo/src/main/java/com/imooglo/',
 	'TITLE' : 
 '''/*
  * $Header: %s.java
@@ -40,6 +31,23 @@ package com.imooglo.%s;
  * @author LiuChen
  * @version 1.0.0.0 %s
  */%s
-public %s %s {
+public %s %s%s%s {
+    %s
+}
 ''',
+	'DATA' :
+'''
+    /**
+     * %s
+     * @return
+     */
+    %s get%s();
+''',
+	'GETTER' :
+'''
+    @Override
+    public %s get%s() {
+        return %s;
+    }
+'''
 }
